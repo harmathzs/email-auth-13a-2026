@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -27,7 +28,11 @@ export default function Navbar({ loggedIn, onLogin, onLogout }) {
   return (
     <header className="navbar">
       <Link to="/">
-        <span className="brand">Acme Portal</span>
+        <Link to="/" className="brand" aria-label="Home">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+          <path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z" />
+        </svg>
+      </Link>
       </Link>
       <div className="user-menu" ref={ref}>
         <button
