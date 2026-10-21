@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
+
 
 export default function Navbar({ loggedIn, onLogin, onLogout }) {
   const [open, setOpen] = useState(false)
@@ -24,7 +26,9 @@ export default function Navbar({ loggedIn, onLogin, onLogout }) {
 
   return (
     <header className="navbar">
-      <span className="brand">Acme Portal</span>
+      <Link to="/">
+        <span className="brand">Acme Portal</span>
+      </Link>
       <div className="user-menu" ref={ref}>
         <button
           className="avatar-btn"
