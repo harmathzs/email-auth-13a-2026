@@ -31,3 +31,17 @@
 }
 .card h1 { margin: 0 0 8px; font-size: 1.5rem; color: #0f2a4a; }
 .card p { margin: 0; color: #475569; line-height: 1.5; }
+.card.narrow { max-width: 420px; margin: 0 auto; }
+.muted { color: #475569; }
+.card a { color: #1d4ed8; }
+.form { display: flex; flex-direction: column; gap: 16px; margin: 16px 0; }
+.form label { display: flex; flex-direction: column; gap: 6px; font-size: .9rem; font-weight: 500; }
+.form input {
+  padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font: inherit;
+}
+.form input:focus { outline: 2px solid #93c5fd; border-color: #1d4ed8; }
+button.primary {
+  padding: 10px 16px; border: 0; border-radius: 6px; background: #1d4ed8;
+  color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.primary:hover { background: #1e40af; }
